@@ -6,7 +6,17 @@ public class ActivateForceShield : MonoBehaviour {
     private CapsuleCollider2D bc2d;
     private PlayerHealth playerHealth;
     private bool wait;
-    
+
+    [Header("Force shield config")]
+    [Range(0f, 100f)]
+    [SerializeField]
+    private float shieldExpireTime;
+
+    [Range(0f, 100f)]
+    [SerializeField]
+    private float shieldNextActiveTime;
+
+
     void Start() {
         forceShield = Resources.Load<GameObject>("Prefabs/PlayerAbilities/ForceShield");
         bc2d = GetComponent<CapsuleCollider2D>();
@@ -20,16 +30,16 @@ public class ActivateForceShield : MonoBehaviour {
             StartCoroutine(playerInvinsible());
             GameObject shieldInstance = Instantiate(forceShield, transform.position, transform.rotation);
             shieldInstance.transform.parent = gameObject.transform;
-            Destroy(shieldInstance, 1f);
+            Destroy(shieldInstance, shieldExpireTime);
         }
     }
 
     IEnumerator playerInvinsible() {
         playerHealth.invinsible = true;
         wait = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(shieldExpireTime);
         playerHealth.invinsible = false;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(shieldNextActiveTime);
         wait = true;
     }
 }

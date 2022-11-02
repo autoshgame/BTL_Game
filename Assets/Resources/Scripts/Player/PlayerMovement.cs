@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour {
 
     public GameObject dust;
     private bool canDust;
+
+    [Header("Movement config")]
+    [SerializeField]
+    [Range(0f, 100f)]
+    private float speed;
     
     void Start() {
         InvokeRepeating ("PlaySound", 0.0f, Random.Range(0.25f, 0.45f));
@@ -26,9 +31,8 @@ public class PlayerMovement : MonoBehaviour {
 
     // Player movement
     void Movement() {
-        float movementFactor = 10f;
-        speedX = Input.GetAxis("Horizontal") * movementFactor;
-        speedY = Input.GetAxis("Vertical") * movementFactor;
+        speedX = Input.GetAxis("Horizontal") * speed;
+        speedY = Input.GetAxis("Vertical") * speed;
         movementSpeed = new Vector3(speedX, speedY, 0f);
 
         if (movementSpeed.magnitude > 0 && canDust)

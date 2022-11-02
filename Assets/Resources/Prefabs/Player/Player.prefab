@@ -540,6 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dust: {fileID: 5099630954058702359, guid: 3a70df62b478149edae148073ae992b0, type: 3}
+  speed: 10
 --- !u!114 &7845101602360083648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e58ef89d77d48c19913304b6107082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shieldExpireTime: 2
+  shieldNextActiveTime: 2
 --- !u!114 &8033965759603858825
 MonoBehaviour:
   m_ObjectHideFlags: 0
