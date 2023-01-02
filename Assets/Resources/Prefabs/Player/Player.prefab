@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e58ef89d77d48c19913304b6107082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shieldExpireTime: 2
+  shieldExpireTime: 3
   shieldNextActiveTime: 2
 --- !u!114 &8033965759603858825
 MonoBehaviour:
