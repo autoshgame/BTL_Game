@@ -15,7 +15,7 @@ public class HydraHealth : MonoBehaviour {
     void Update() {
         if (health <= originalHealth * 0.8 && scream1) {
             gameObject.GetComponent<Animator>().SetTrigger("scream");
-            scream1 = false;
+            scream1 = false; 
         } else {
             if (health <= originalHealth * 0.5 && scream2) {
                 gameObject.GetComponent<Animator>().SetTrigger("scream");

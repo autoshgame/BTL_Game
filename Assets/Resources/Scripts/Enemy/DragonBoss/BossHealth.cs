@@ -22,7 +22,7 @@ public class BossHealth: MonoBehaviour {
 
         if (health <= 0){
             animator.SetTrigger("Death");
-        } else if (health <= originalHealth*.2f) {
+        } else if (health <= originalHealth * .2f) {
             if (roar2) {
                 animator.SetTrigger("Roar");
                 roar2 = false;

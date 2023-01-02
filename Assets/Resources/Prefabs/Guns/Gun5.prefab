@@ -150,6 +150,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -286,5 +287,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootWaitTime: 0.4
   cartridgeSize: 10
-  ammobagSize: 120
+  ammobagSize: 3000000
   reloadTime: 1.5

@@ -47,7 +47,7 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void IncreaseHealth(int heal) {
-        health = Math.Min(100, health + heal);
+        health = Math.Min(baseHealth, health + heal);
         healthBar.SetHealth(health);
         GameObject blood = Instantiate(bloodHeal1, transform.position, transform.rotation);
         blood.transform.SetParent(transform);
