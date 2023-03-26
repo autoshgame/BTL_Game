@@ -4,20 +4,17 @@ using UnityEngine;
 public class RoomController : MonoBehaviour {
     public DoorController[] doors;
     
-    // For checking the objective
     public bool hasEnemies;
     public List<GameObject> toKill = new List<GameObject>();
     private List<GameObject> temp = new List<GameObject>();
     private BoxCollider2D bC2D;
 
-    // For controlling the camera
     public bool hasCameraControl;
     private GameObject objectCam;
     private Camera cam;
     public Vector3 camPosition;
     public float camSize;
 
-    // For controlling music
     public bool hasMusicControl;
     public string mainTheme;
     public string fightMusic;

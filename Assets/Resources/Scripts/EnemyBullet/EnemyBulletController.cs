@@ -11,7 +11,6 @@ public class EnemyBulletController : MonoBehaviour {
         explosion = Resources.Load<GameObject>("Prefabs/Effects/BulletExplosionEffect1");
     }
 
-    // Detects if the collision is an object Foreground or player
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player"))
             playerHealth.decreaseHealth(damage);
