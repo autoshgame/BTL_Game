@@ -29,12 +29,10 @@ public class DoorController : MonoBehaviour {
         if (Vector2.Distance(transform.position, player.position) < distance && !isOpen && objectiveCompleted) {
             if (inChild) SetChildDoors(true);
             else SetDoor(true);
-
             isOpen = true;
         } else if ((Vector2.Distance(transform.position, player.position) > distance || !objectiveCompleted) && isOpen) {
             if (inChild) SetChildDoors(false);
             else SetDoor(false);
-
             isOpen = false;
         }
     }
