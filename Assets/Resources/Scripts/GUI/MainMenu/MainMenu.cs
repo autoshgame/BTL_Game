@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayLevel1() {
         PlayMenuSound();
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level2");
     }
     
     public void PlayLevel2() {

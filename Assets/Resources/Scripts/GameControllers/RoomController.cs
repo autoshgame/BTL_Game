@@ -52,8 +52,6 @@ public class RoomController : MonoBehaviour {
             }
 
             if (hasMusicControl) {
-                Debug.Log(mainTheme);
-                Debug.Log(fightMusic);
                 FindObjectOfType<SoundManager>().Play(mainTheme);
                 FindObjectOfType<SoundManager>().StopPlaying(fightMusic);
             }
