@@ -50,6 +50,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -118,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd22a7fb96a5cdf4aaa0174924194310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 12
 --- !u!70 &2727736726623458480
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -149,6 +150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.129
       objectReference: {fileID: 0}
@@ -164,6 +170,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -175,16 +186,6 @@ PrefabInstance:
     - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3642365722370220211, guid: a3f698c212c1b4710940f8d5f9719f3b,
