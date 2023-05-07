@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour {
     
     public void PlayLevel2() {
         PlayMenuSound();
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level4");
     }
 
     public void PlayLevel3() {
