@@ -1,2 +1,3 @@
 # BTL_Game
-Sample BTL 
+Do an khoa luan tot nghiep nganh cong nghe thong tin
+Sinh vien Ha Sy Hieu
