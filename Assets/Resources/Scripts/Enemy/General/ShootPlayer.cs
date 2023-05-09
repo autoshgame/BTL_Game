@@ -22,7 +22,6 @@ public class ShootPlayer : MonoBehaviour {
     void Start() {
         ableToShoot = true;
 
-        // Get shootpoint transform and load bullet prefab
         shootPoint = transform.Find("Cannon");
 
         path = "Prefabs/EnemyBullets/" + TypeOfBullet;
@@ -38,7 +37,7 @@ public class ShootPlayer : MonoBehaviour {
             ableToShoot = false;
         }
         
-        rotateCannon();
+        RotateCannon();
     }
 
     IEnumerator ShootBulletCoroutine() {
@@ -53,13 +52,9 @@ public class ShootPlayer : MonoBehaviour {
         bulletRB.AddForce(shootPoint.right * bulletForce, ForceMode2D.Impulse);
     }
 
-    // Move Aim Point
-    void rotateCannon() {
-        // Get vector relative to enemy and player
+    void RotateCannon() {
         Vector2 aim = gameObject.transform.position - target.transform.position;
         aim *= -1f;
-
-        // Get angle of the aim vector
         aimAngle = Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg;
         shootPoint.transform.rotation = Quaternion.Euler(0, 0, aimAngle);
     }

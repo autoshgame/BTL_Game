@@ -8,7 +8,7 @@ public class CameraMovement : MonoBehaviour {
         player = GameObject.Find("Player");
     }
 
-    void FixedUpdate() {
+    void LateUpdate() {
         playerPosition = player.transform.position;
         playerPosition.z = -10;
         transform.position = playerPosition;
